@@ -1,0 +1,43 @@
+GLOBAL FOOD WASTAGE - DATA CLEANING REPORT
+==========================================================
+
+DATASET OVERVIEW
+----------------------------------------------------------
+Rows before cleaning       : 5250
+Columns before cleaning    : 8
+Rows after cleaning        : 5094
+Exact duplicate rows removed: 156
+Rows removed overall       : 156
+
+DATA VALIDATION
+----------------------------------------------------------
+Negative values in Total Waste (Tons): 10
+Negative values in Economic Loss (Million $): 10
+Negative values in Avg Waste per Capita (Kg): 10
+Negative values in Population (Million): 10
+Invalid household percentages: 54
+Invalid year values           : 30
+
+MISSING VALUE HANDLING
+----------------------------------------------------------
+Country values filled as 'Unknown': 20
+Food Category values filled as 'Unknown': 35
+Year values filled with median: 30
+Total Waste (Tons) values filled with median: 55
+Economic Loss (Million $) values filled with median: 45
+Avg Waste per Capita (Kg) values filled with median: 40
+Population (Million) values filled with median: 35
+Household Waste (%) values filled with median: 54
+
+POSSIBLE OUTLIERS (IQR METHOD)
+----------------------------------------------------------
+Outliers are reported for review; original values are retained.
+Total Waste (Tons): 20 possible outlier(s); expected range approximately -24241.42 to 74582.26
+Economic Loss (Million $): 0 possible outlier(s); expected range approximately -24078.32 to 73778.11
+Avg Waste per Capita (Kg): 0 possible outlier(s); expected range approximately -71.83 to 290.35
+Population (Million): 0 possible outlier(s); expected range approximately -703.93 to 2112.21
+
+OUTPUT
+----------------------------------------------------------
+Cleaned CSV : global_food_wastage_cleaned.csv
+This report: cleaning_report.txt
