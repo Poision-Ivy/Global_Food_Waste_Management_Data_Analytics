@@ -1,8 +1,3 @@
-"""
-GLOBAL FOOD WASTAGE DATASET - MENU-DRIVEN CSV QUERY PROGRAM
-Imports used: NumPy and Pandas only.
-"""
-
 import numpy as np
 import pandas as pd
 df = pd.read_csv("global_food_wastage_cleaned.csv")
