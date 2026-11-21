@@ -1,11 +1,3 @@
-"""
-GLOBAL FOOD WASTAGE DATASET
-Clean and validate the messy CSV using Pandas and NumPy only.
-Files created:
-1. global_food_wastage_cleaned.csv
-2. cleaning_report.txt
-"""
-
 import numpy as np
 import pandas as pd
 
